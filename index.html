@@ -9,117 +9,99 @@ Instructor: Cheri Allen-->
 
 <!DOCTYPE html>
 <html>
+  
   <head>
-    <meta charset="UTF-8">
-    <title>Week 1 Assignment: Semantic Tags</title>
+  <meta charset="UTF-8">
+  <title>Week 1 Assignment: Semantic Tags</title>
   </head>
+  
     <body>
-      <article>
-        <header>
-        <h1>Week 1: Notes to self.</h1>
-        </header>
-        <p>This document will serve as a mini-braindump for some of the things I've learned so far. Git, in particular, is an unfamiliar way for me to think about things, and I want to remind myself of the basics. As someone who is also pursuing a certificate in Technical Writing, I definitely need to get bitter at git. I mean better.</p>
-        <h2>Git and GitHub Overview</h2>
+      <main>
+        <hgroup>
+          
+          <section>
+<!--I borrowed(?) stole(?) this part from this forum posting                              http://stackoverflow.com/questions/2000656/using-href-links-inside-option-tag
+because I couldn't figure out how to make the select tag useful on my own. 
+My intention isn't to plagiarize, just to make it functional. Hope that's OK.-->
+          <select name="Links to useful resources for this class" onchange="location = this.options[this.selectedIndex].value;">
+          <option value="#">Links to useful resources for this class</option>
+          <option value="https://canvas.uw.edu/courses/1019863">Canvas</option>
+          <option value="https://uw-html5.hipchat.com/home">HipChat</option>
+          <option value=" http://uweoconnect.extn.washington.edu/html5-100">Connect</option>
+          </select>
+          </section>
+          
+          <section>
+          <article>
+          <header>
+          <h1>Week 1: Notes to self.</h1>
+          </header>
+          <p>This document will serve as a mini-braindump for some of the things I've learned so far. Git, in particular, is an unfamiliar way for me to think about things, and I want to remind myself of the basics. As someone who is also pursuing a certificate in Technical Writing, I definitely need to get bitter at git. I mean better.</p>
+          <h3>Git and GitHub Overview</h3>
           <ul style="list-style-type:circle">
             <li>Git is a version control system. To flesh out that definition, it is a method of interacting with files that allows single- or multiple authors to foreground changes made to those documents. Versions of documents can then be easily compared and the authorship of changes to those versions can be easily ascribed.</li>
             <li>GitHub, although wholly dependent upon and interrelated with Git, should be defined separately. It is a repository for files that are being manipulated using Git. It serves both as a public and private repository, allowing its users to collaborate and share documents and code with each other and with the world, if they choose.</li>
             <li>It is possible to Git without GitHub, either locally or using a third-party host, but becasue GitHub is designed to work hand-in-glove with Git, most people choose to use GitHub.</li>
           </ul>     
-       </article>
+          </article>
+          </section>
       
-      <aside>
-        <h2>Did you know?</h2>
-        <p>You're not alone if you find Git intimidating. Git was originally created ten years ago by Linus Torvalds, the inventor of Linux, to track changes to the Linux kernel. Initially, it received a somewhat skeptical response, as even Google's engineers claimed it was "expressly designed to make [us] feel stupid."</p>
-        <figure>
-        <iframe width="426" height="240"
-        src="https://www.youtube.com/embed/4XpnKHJAok8?autoplay=0">
-        </iframe>
-        <figcaption>Linus Torvalds explains Git to Google.</figcaption>
-        </figure>
-      </aside>
-      
-      <article>
-        <header>
-        <h2>Git: essential commands</h2>
-        </header>
-        <p>The following is for my own benefit as I repeatedly forget the correct order of git commands when committing changes to GitHub.</p>
-        <h4>Steps for committing changes to GitHub:</h4>
+          <section>
+          <aside>
+          <h3>Did you know?</h3>
+          <p>You're not alone if you find Git intimidating. Git was originally created ten years ago by Linus Torvalds, the inventor of Linux, to track changes to the Linux kernel. Initially, it received a somewhat skeptical response, as even Google's engineers claimed it was "expressly designed to make [us] feel stupid."</p>
+          <figure>
+          <iframe width="426" height="240"
+          src="https://www.youtube.com/embed/4XpnKHJAok8?autoplay=0">
+          </iframe>
+          <figcaption>Linus Torvalds explains Git to Google.</figcaption>
+          </figure>
+          </aside>
+          </section>
+          
+          <section>
+          <article>
+          <header>
+          <h3>Git: essential commands</h3>
+          </header>
+          <p>The following is for my own benefit as I repeatedly forget the correct order of git commands when committing changes to GitHub.</p>
+          <h4>Steps for committing changes to GitHub:</h4>
           <ul style="list-style-type:circle">
-            <li>Make local changes to your document (for our purposes, we assume it's index.html)</li>
-            <li>In GitBash or your local bash equivalent, make sure you're working in the correct branch by typing the following: <b>git checkout [yourbranchname]</b>. Yes, I have multiple branches already because I am dumb.</li>
-            <li>Stage the file you want to commit by typing the following: <b>git add index.html</b></li>
-            <li>Commit the document with a brief comment by typing the following: <b>git commit -m "note your changes inside these quotation marks"</b></li>
-            <li>Push the committed, commented document to the correct branch on GitHub by typing the following: <b>git push origin [yourremotebranchname]</b>. If pushing to the "master," you would type: <b>git push origin master.</b> </li>
-            <li>Check the status of your attempt by typing <b>git status</b> and then double-check your <a href="https://github.com/morgan-lang/">GitHub repository.</a></li>
+            <li>Make local changes to your document (for our purposes, we assume it's <em>index.html)</em></li>
+            <li>In GitBash or your local bash equivalent, make sure you're working in the correct branch by typing the following: <b><code>git checkout [yourbranchname]</code></b>. Yes, I have multiple branches already because I am dumb.</li>
+            <li>Stage the file you want to commit by typing the following: <code><b>git add index.html</b></code></li>
+            <li>Commit the document with a brief comment by typing the following: <code><b>git commit -m "note your changes inside these quotation marks"</b></code></li>
+            <li>Push the committed, commented document to the correct branch on GitHub by typing the following: <code><b>git push origin [yourremotebranchname]</b></code>. If pushing to the "master," you would type: <code><b>git push origin master.</b></code><code><b>git status</b></code> and then double-check your <a href="https://github.com/morgan-lang/">GitHub repository.</a></li>
           </ul>     
-       </article>
+          </article>
+          </section>
+          </header>
+          </hgroup>
+      
+        <section>
+        <article>
+        <summary><b>Additonal Notes</b>
+        </summary>
+        <details>
+        <ul style="list-style-type:circle">
+        <li>It is extremely important that you are aware of how your <mark>RSA key</mark> works, where it is stored, and how to use it.</li>
+        <li>Git only works if you remember to use it locally as well as remotely. It's a way for you to track your own versions of documents internally, then, once you've shared your document, further track changes with collaborators.</li>
+        </details>
+        </article>
+        </section>
   
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
+      </main>
     </body>
   
-    <p>&copy; 2015 Morgan Lang</p>
-      <nav>
+        <section>
+        <footer>
+        <p>&copy; 2015 Morgan Lang</p>
+        <nav>
         <a href="https://github.com/morgan-lang/">My GitHub</a>
         <a href="http://www.w3schools.com/html/html5_semantic_elements.asp">W3School's HTML Semantics Page</a>
         <a href="mailto:mhl21@uw.edu">Email</a>
         </nav>
         </footer>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+        </section>
 
 </html>
