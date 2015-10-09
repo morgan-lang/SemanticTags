@@ -71,7 +71,8 @@ My intention isn't to plagiarize, just to make it functional. Hope that's OK.-->
             <li>In GitBash or your local bash equivalent, make sure you're working in the correct branch by typing the following: <b><code>git checkout [yourbranchname]</code></b>. Yes, I have multiple branches already because I am dumb.</li>
             <li>Stage the file you want to commit by typing the following: <code><b>git add index.html</b></code></li>
             <li>Commit the document with a brief comment by typing the following: <code><b>git commit -m "note your changes inside these quotation marks"</b></code></li>
-            <li>Push the committed, commented document to the correct branch on GitHub by typing the following: <code><b>git push origin [yourremotebranchname]</b></code>. If pushing to the "master," you would type: <code><b>git push origin master.</b></code><code><b>git status</b></code> and then double-check your <a href="https://github.com/morgan-lang/">GitHub repository.</a></li>
+            <li>Push the committed, commented document to the correct branch on GitHub by typing the following: <code><b>git push origin [yourremotebranchname]</b></code>. If pushing to the "master," you would type: <code><b>git push -u origin master.</b></code><code><b>git status</b></code> and then double-check your <a href="https://github.com/morgan-lang/">GitHub repositories.</a></li>
+            <li>For this assignment, I first created the repository <b>SemanticTags</b> through GitHub's web interface, then used the following command in GitBash: <b><code>git remote add origin git@github.com:morgan-lang/SemanticTags.git</code></b>, followed by <b><code>git push -u origin master</code></b></li> The first command identified <b>SemanticTags</b> as a valid origin (remote) repository, and the second command actually uploaded <em>index.html</em>.
           </ul>     
           </article>
           </section>
