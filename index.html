@@ -12,8 +12,9 @@ To preview this page, use this URL: https://htmlpreview.github.io/?https://githu
 <html>
   
   <head>
-  <meta charset="UTF-8">
-  <title>Week 1 Assignment: Semantic Tags</title>
+    <meta charset="UTF-8">
+      <title>Week 1 Assignment: Semantic Tags</title>
+        <link rel="stylesheet" type="text/css" href="./styles/style.css">
   </head>
   
     <body>
@@ -82,7 +83,17 @@ My intention isn't to plagiarize, just to make it functional. Hope that's OK.-->
               <br><b><code>git commit -m "added preview link"</code></b>
               <br>and finally by 
               <br><b><code>git push -u origin master</code></b> 
-              <br>The first command identified <b>SemanticTags</b> as a valid origin (remote) repository, the second command staged <em>index.html</em>, the third command "committed" the changed document with a comment regarding its altered content, and the final "push" command finally uploaded it to github, tracking its changes.</li>
+              <br>The first command identified <b>SemanticTags</b> as a valid origin (remote) repository, the second command staged <em>index.html</em>, the third command "committed" the changed document with a comment regarding its altered content, and the final "push" command finally uploaded it to github, tracking its changes.
+              <br>
+            <h3>NOTE: to publish your work to Github's gh-pages, use the following sequence:</h3>
+              <br><b><code>git add .</code></b>
+              <br><b><code>git commit -m "merging to gh-pages"</code></b>
+              <br><b><code>git checkout gh-pages</code></b> 
+              <br><b><code>git merge master</code></b>
+              <br><b><code>git checkout master</code></b>
+              <br><b><code>git push -u origin master</code></b> 
+              <br><b><code>git push -u origin master:gh-pages</code></b> 
+            </li>
           </ul>     
           </article>
           </section>
